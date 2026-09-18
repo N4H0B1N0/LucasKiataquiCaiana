@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Web - Sobre</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- Header & Nav Semântico -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="index.html">TechInfo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="sobre.html">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="container my-5">
+        <section class="text-center mb-5">
+            <h1 class="display-5 fw-bold">Sobre a Plataforma</h1>
+            <p class="lead text-muted">Conheça mais sobre as tecnologias e os conceitos aplicados.</p>
+        </section>
+
+        <!-- Carrossel Bootstrap -->
+        <section class="mb-5">
+            <div id="carouselTech" class="carousel slide rounded-3 overflow-hidden shadow-sm" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselTech" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carouselTech" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carouselTech" data-bs-slide-to="2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active bg-primary text-white text-center py-5">
+                        <div class="py-4">
+                            <h2><i class="bi bi-phone"></i> Design 100% Responsivo</h2>
+                            <p>Interface adaptada para celulares, tablets e telas de computador.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item bg-dark text-white text-center py-5">
+                        <div class="py-4">
+                            <h2><i class="bi bi-grid-fill"></i> CSS Flexbox & Grid</h2>
+                            <p>Alinhamento fluido de elementos em tela.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item bg-secondary text-white text-center py-5">
+                        <div class="py-4">
+                            <h2><i class="bi bi-check-circle-fill"></i> Acessibilidade</h2>
+                            <p>Estrutura semântica pensada para leitura limpa e bom SEO.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselTech" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselTech" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Accordion Bootstrap -->
+        <section class="row justify-content-center">
+            <div class="col-12 col-lg-8">
+                <h3 class="fw-bold mb-3">Perguntas Frequentes</h3>
+                <div class="accordion shadow-sm" id="accordionSobre">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#item1">
+                                O que é o Bootstrap?
+                            </button>
+                        </h2>
+                        <div id="item1" class="accordion-collapse collapse show" data-bs-parent="#accordionSobre">
+                            <div class="accordion-body text-muted">
+                                Bootstrap é um framework front-end open-source utilizado para criar layouts responsivos e modernos rapidamente.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#item2">
+                                Por que utilizar tags semânticas no HTML5?
+                            </button>
+                        </h2>
+                        <div id="item2" class="accordion-collapse collapse" data-bs-parent="#accordionSobre">
+                            <div class="accordion-body text-muted">
+                                Tags semânticas ajudam os mecanismos de busca (SEO) e leitores de tela a compreenderem o papel de cada seção do site.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Semântico -->
+    <footer class="bg-dark text-white text-center py-4 mt-auto">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 TechInfo. Todos os direitos reservados. <span class="badge bg-primary">v2.0</span></p>
+        </div>
+    </footer>
+
+    <!-- Scripts JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
