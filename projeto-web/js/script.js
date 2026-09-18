@@ -1,34 +1,23 @@
-// Aguarda o carregamento completo do DOM
 document.addEventListener('DOMContentLoaded', () => {
 
-    // 1. Inicialização do Tooltip do Bootstrap (se utilizado no projeto)
-    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
-    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+    // 1. Inicialização de Tooltips do Bootstrap (com checagem de segurança)
+    if (typeof bootstrap !== 'undefined') {
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+        tooltipTriggerList.forEach(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+    }
 
-    // 2. Validação simples do Formulário de Contacto
+    // 2. Validação condicional do Formulário (apenas executa se o formulário existir na página)
     const formContato = document.querySelector('form');
-    
     if (formContato) {
         formContato.addEventListener('submit', (event) => {
-            event.preventDefault(); // Impede o envio padrão da página
-
-            const nome = document.getElementById('nome').value.trim();
-            const email = document.getElementById('email').value.trim();
-            const mensagem = document.getElementById('mensagem').value.trim();
-
-            if (nome === '' || email === '' || mensagem === '') {
-                alert('Por favor, preencha todos os campos obrigatórios.');
-                return;
+            event.preventDefault();
+            const nome = document.getElementById('nome')?.value.trim();
+            if (nome) {
+                alert(`Obrigado pelo seu contacto, ${nome}!`);
+                formContato.reset();
             }
-
-            // Exibe mensagem de sucesso visual
-            alert(`Obrigado pelo seu contacto, ${nome}! A sua mensagem foi enviada com sucesso.`);
-            
-            // Limpa o formulário
-            formContato.reset();
         });
     }
 
-    // 3. Log de navegação ativa (Opcional)
-    console.log("Projeto Web carregado com sucesso.");
+    console.log("Projeto Web carregado com sucesso sem erros.");
 });
