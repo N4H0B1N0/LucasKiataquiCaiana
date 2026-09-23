@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Contato</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html">LOGO</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </header>
+    <main>
+        <div>
+            <div class="container p-5 my-5 border" style="display: flex; justify-content: space-between; align-items: center; flex-direction: column;">
+                <h1 class="text-danger">Encontrou um problema?</h1>
+                <p>Você pode mandar mensagem nos e-mails do componente abaixo reportando os erros que se encaixam nos seguintes componentes:</p>
+                <p>-Site: Problema em andar pelo site, como falhar em descer e ver o resto do conteúdo da página ou ir para as próximas.</p>
+                <p>-Pagamento: Problema em pagar ou receber o jogo após o pagamento (enviar o e-mail com comprovante nesse caso).</p>
+                <p>-Bugs: Problema nos jogos em questão, como um personagem sumindo do nada, "soft lock"(quando ocorre algo que impede você de avançar na hístoria dp jogo), paredes que não tem colisão, entre vários outros exemplos.</p>
+                <img src="src/bugexam.jpg" style="width: 100%; margin-top: 10%;" class="bugs">
+                <h3 style="margin-bottom: 10%;">Exemplo 1 - Personagem atravessando o chão e caindo no mapa.</h3>
+                <img src="src/bug1.webp" style="width: 100%;" class="bugs">
+                <h3>Exemplo 2 - Personagem ter clash de valor 0.</h3>
+            </div>
+            <div class="container p-5 my-5 border"
+                style="display: flex; justify-content: space-between; align-items: center; flex-direction: column;">
+                <h1 class="text-primary">E-mails principais</h1>
+                <div class="container mt-3">           
+  <table class="table table-dark table-hover">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Sobrenome</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Kiara</td>
+        <td>Sisyphus</td>
+        <td>sisyphuskiara@gmail.com</td>
+      </tr>
+      <tr>
+        <td>Eliza</td>
+        <td>Heart</td>
+        <td>hearteliza@gmail.com</td>
+      </tr>
+      <tr>
+        <td>Rafael</td>
+        <td>Vitorino</td>
+        <td>vitoriorafael@gmail.com</td>
+      </tr>
+    </tbody>
+  </table>
+</div>  
+            </div>
+            <div class="container mt-3">
+                <h2 class="text-primary">Envio Rápido</h2>
+                <p>Em caso do problema não for sério, pode enviar pelo próprio site, isso se não for preciso enviar imagens. Problemas enviados aqui não podem ser muito sérios, apenas coisas simples, como demora no carregamento, pois podem ser resolvidos na hora. É constantemente revisado as mensagens enviadas, mas ainda darão prioridades a problemas maiores (se houver).</p>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="text" placeholder="Mensagem">
+                </form>
+                <button type="button" class="btn btn-primary" data-bs-toggle="collapse"
+                    data-bs-target="#demo">Enviar</button>
+                <div id="demo" class="collapse">
+                    Mensagem enviada!
+                </div>
+            </div>
+    </main>
+    <footer>
+        <p>© 2026 - Yuto Heart</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
