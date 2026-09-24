@@ -11,7 +11,10 @@
 
 <body>
     <header>
-        <a href="index.html">LOGO</a>
+        <a href="index.html" style="display: flex; align-items: center;">
+            <img src="src/logo.png" alt="Descrição" class="logo">
+            <img src="src/letrario.png" class="letrario">
+        </a>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="sobre.html">Sobre</a></li>
@@ -20,12 +23,18 @@
     </header>
     <main>
         <div>
-            <div class="container p-5 my-5 border" style="display: flex; justify-content: space-between; align-items: center; flex-direction: column;">
+            <div class="container p-5 my-5 border"
+                style="display: flex; justify-content: space-between; align-items: center; flex-direction: column;">
                 <h1 class="text-danger">Encontrou um problema?</h1>
-                <p>Você pode mandar mensagem nos e-mails do componente abaixo reportando os erros que se encaixam nos seguintes componentes:</p>
-                <p>-Site: Problema em andar pelo site, como falhar em descer e ver o resto do conteúdo da página ou ir para as próximas.</p>
-                <p>-Pagamento: Problema em pagar ou receber o jogo após o pagamento (enviar o e-mail com comprovante nesse caso).</p>
-                <p>-Bugs: Problema nos jogos em questão, como um personagem sumindo do nada, "soft lock"(quando ocorre algo que impede você de avançar na hístoria dp jogo), paredes que não tem colisão, entre vários outros exemplos.</p>
+                <p>Você pode mandar mensagem nos e-mails do componente abaixo reportando os erros que se encaixam nos
+                    seguintes componentes:</p>
+                <p>-Site: Problema em andar pelo site, como falhar em descer e ver o resto do conteúdo da página ou ir
+                    para as próximas.</p>
+                <p>-Pagamento: Problema em pagar ou receber o jogo após o pagamento (enviar o e-mail com comprovante
+                    nesse caso).</p>
+                <p>-Bugs: Problema nos jogos em questão, como um personagem sumindo do nada, "soft lock"(quando ocorre
+                    algo que impede você de avançar na hístoria dp jogo), paredes que não tem colisão, entre vários
+                    outros exemplos.</p>
                 <img src="src/bugexam.jpg" style="width: 100%; margin-top: 10%;" class="bugs">
                 <h3 style="margin-bottom: 10%;">Exemplo 1 - Personagem atravessando o chão e caindo no mapa.</h3>
                 <img src="src/bug1.webp" style="width: 100%;" class="bugs">
@@ -34,38 +43,41 @@
             <div class="container p-5 my-5 border"
                 style="display: flex; justify-content: space-between; align-items: center; flex-direction: column;">
                 <h1 class="text-primary">E-mails principais</h1>
-                <div class="container mt-3">           
-  <table class="table table-dark table-hover">
-    <thead>
-      <tr>
-        <th>Nome</th>
-        <th>Sobrenome</th>
-        <th>Email</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Kiara</td>
-        <td>Sisyphus</td>
-        <td>sisyphuskiara@gmail.com</td>
-      </tr>
-      <tr>
-        <td>Eliza</td>
-        <td>Heart</td>
-        <td>hearteliza@gmail.com</td>
-      </tr>
-      <tr>
-        <td>Rafael</td>
-        <td>Vitorino</td>
-        <td>vitoriorafael@gmail.com</td>
-      </tr>
-    </tbody>
-  </table>
-</div>  
+                <div class="container mt-3">
+                    <table class="table table-dark table-hover">
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Sobrenome</th>
+                                <th>Email</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Kiara</td>
+                                <td>Sisyphus</td>
+                                <td>sisyphuskiara@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td>Eliza</td>
+                                <td>Heart</td>
+                                <td>hearteliza@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td>Rafael</td>
+                                <td>Vitorino</td>
+                                <td>vitoriorafael@gmail.com</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
             <div class="container mt-3">
                 <h2 class="text-primary">Envio Rápido</h2>
-                <p>Em caso do problema não for sério, pode enviar pelo próprio site, isso se não for preciso enviar imagens. Problemas enviados aqui não podem ser muito sérios, apenas coisas simples, como demora no carregamento, pois podem ser resolvidos na hora. É constantemente revisado as mensagens enviadas, mas ainda darão prioridades a problemas maiores (se houver).</p>
+                <p>Em caso do problema não for sério, pode enviar pelo próprio site, isso se não for preciso enviar
+                    imagens. Problemas enviados aqui não podem ser muito sérios, apenas coisas simples, como demora no
+                    carregamento, pois podem ser resolvidos na hora. É constantemente revisado as mensagens enviadas,
+                    mas ainda darão prioridades a problemas maiores (se houver).</p>
                 <form class="d-flex">
                     <input class="form-control me-2" type="text" placeholder="Mensagem">
                 </form>
@@ -75,6 +87,7 @@
                     Mensagem enviada!
                 </div>
             </div>
+        </div>
     </main>
     <footer>
         <p>© 2026 - Yuto Heart</p>
