@@ -11,13 +11,13 @@
 
 <body>
     <header>
-        <a href="http://127.0.0.1:5000/" style="display: flex; align-items: center;">
+        <a href="{{ url_for('home') }}" style="display: flex; align-items: center;">
             <img src="../static/img/logo.png" alt="Descrição" class="logo">
             <img src="../static/img/letrario.png" class="letrario">
         </a>
         <ul>
-            <li><a href="http://127.0.0.1:5000/">Home</a></li>
-            <li><a href="http://127.0.0.1:5000/sobre">Sobre</a></li>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('sobre') }}">Sobre</a></li>
             <li><a href="#">Contato</a></li>
         </ul>
     </header>
