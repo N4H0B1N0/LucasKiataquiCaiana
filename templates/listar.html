@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Usuários cadastrados</h1>
+
+{% with mensagens = get_flashed_messages() %}
+  {% if mensagens %}
+    {% for m in mensagens %}
+      <p class="mensagem">{{ m }}</p>
+    {% endfor %}
+  {% endif %}
+{% endwith %}
+
+{% if registros %}
+<table border="1" cellpadding="6">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nome</th>
+      <th>E-mail</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for r in registros %}
+    <tr>
+      <td>{{ r.id }}</td>
+      <td>{{ r.nome }}</td>
+      <td>{{ r.email }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% else %}
+<p>Nenhum usuário cadastrado ainda.</p>
+{% endif %}
+{% endblock %}
