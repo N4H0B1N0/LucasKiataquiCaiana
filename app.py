@@ -13,7 +13,6 @@ app.secret_key = os.getenv("SECRET_KEY")
 
 
 def conectar():
-    """Abre uma nova conexão com o MySQL usando as variáveis do .env."""
     return pymysql.connect(
         host=os.getenv("DB_HOST"),
         port=int(os.getenv("DB_PORT", 3306)),
