@@ -5,7 +5,6 @@ from dotenv import load_dotenv
 from flask import Flask, render_template, request, redirect, url_for, flash
 from werkzeug.security import generate_password_hash
 
-# Carrega as variáveis do arquivo .env (nenhuma credencial fica no código)
 load_dotenv()
 
 app = Flask(__name__)
